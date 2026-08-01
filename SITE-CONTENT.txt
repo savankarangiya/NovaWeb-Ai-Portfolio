@@ -1,0 +1,75 @@
+NOVAWEB AI — Premium AI Web Development Agency
+==============================================
+URL: https://nova-web-portfolio.vercel.app/
+Founder: Savan Karangiya
+Type: Premium AI Web Development Agency
+
+Hero
+----
+Tagline: Premium AI Websites Designed To Grow Businesses
+Subtitle: We create modern, high-converting websites with AI-powered workflows, premium UI/UX and blazing-fast performance.
+Trust badges: React, AI, SEO, Responsive, Performance, Modern UI, Animations
+CTAs: View Projects, Book Discovery Call
+
+Live Projects
+-------------
+1. Smile Dental Care — Premium Dental Clinic Website
+   Live: https://smile-dental-care-git-main-savankarangiyas-projects.vercel.app/
+   Problem: Clinic had no online presence and could not project its high-end experience.
+   Solution: Calm, clinical-but-warm design with clear booking paths and trust signals.
+   Result: A fast, SEO-ready site that drives appointment enquiries on every device.
+   Tech: React, Tailwind CSS, Framer Motion, Vite
+
+2. IronCore Elite Fitness — High-Energy Gym & Coaching Brand
+   Live: https://fite-with-savan-git-main-savankarangiyas-projects.vercel.app/
+   Problem: Dated web presence undercut the brand's energy and results.
+   Solution: Dark, high-contrast interface with dramatic motion and aggressive visual identity.
+   Result: A site that feels like the gym — intense, motivating, built to convert.
+   Tech: React, Tailwind CSS, Framer Motion, Vite
+
+Services
+--------
+- Premium Business Websites
+- Gym Websites
+- Dental Websites
+- Landing Pages
+- Portfolio Websites
+- AI Integration
+- Performance Optimization
+- SEO Optimization
+- Responsive Development
+
+Development Process
+-------------------
+01 Discovery, 02 Research, 03 Design, 04 Development, 05 Testing, 06 Deployment, 07 Support
+
+Tech Stack
+----------
+React, Tailwind CSS, JavaScript, HTML, CSS, Git, GitHub, Vite, Framer Motion, AI Tools, Responsive Design
+
+Why Choose NOVAWEB AI
+---------------------
+Premium Design, Modern Animations, Fast Delivery, Modern UI, Responsive, SEO, Performance, Accessibility, AI Powered Workflow
+
+Statistics
+----------
+2+ Live Projects, 100+ Development Hours, 340+ Commits, 45K+ Lines of Code, 200+ Cups of Coffee
+
+About The Founder
+-----------------
+Name: Savan Karangiya
+Roles: AI Web Developer, React Developer, Frontend Engineer
+Mission: Helping businesses grow with premium digital experiences.
+Timeline: Foundation -> Mastering the modern stack -> AI-powered workflows -> NOVAWEB AI
+
+Testimonials
+------------
+No fake testimonials. The section reads: "Your Business Could Be The Next Success Story."
+
+FAQ
+---
+Key questions: What makes NOVAWEB AI different? How long does it take? What does AI-powered mean? Is the website fast and SEO-ready? Do you provide support after launch? How do we get started?
+
+Contact
+-------
+WhatsApp, Email (hello@novawebai.com), GitHub (SavanKarangiya), LinkedIn (Savan Karangiya), Resume download.

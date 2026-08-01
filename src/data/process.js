@@ -3,49 +3,49 @@ export const processSteps = [
     id: 'discovery',
     num: '01',
     title: 'Discovery',
-    desc: 'We dive deep into your business, audience and goals to define what success looks like before a single pixel is drawn.',
+    desc: 'Understanding your goals, audience and what success looks like for your project.',
     icon: 'Compass'
   },
   {
-    id: 'research',
+    id: 'planning',
     num: '02',
-    title: 'Research',
-    desc: 'Competitor analysis, UX research and AI-assisted insight gathering to find the openings only your brand can own.',
-    icon: 'Search'
+    title: 'Planning',
+    desc: 'Mapping the structure, content and features — a clear plan before any design work begins.',
+    icon: 'ClipboardList'
   },
   {
     id: 'design',
     num: '03',
     title: 'Design',
-    desc: 'Premium UI concepts, motion systems and immersive interactions designed to feel effortless and unforgettable.',
+    desc: 'Modern, clean UI concepts with attention to spacing, hierarchy and micro interactions.',
     icon: 'PenTool'
   },
   {
     id: 'development',
     num: '04',
     title: 'Development',
-    desc: 'Clean, modular React engineering with AI-accelerated workflows and obsessive attention to performance.',
+    desc: 'Building with React, Vite and Tailwind CSS — clean, reusable and performant code.',
     icon: 'Code2'
   },
   {
     id: 'testing',
     num: '05',
     title: 'Testing',
-    desc: 'Rigorous QA across devices, browsers and connection speeds so the experience is flawless everywhere.',
+    desc: 'Checking responsiveness, cross-browser behaviour and performance before launch.',
     icon: 'Bug'
   },
   {
     id: 'deployment',
     num: '06',
     title: 'Deployment',
-    desc: 'Zero-drama launches with optimized builds, CI/CD and bulletproof hosting configuration.',
+    desc: 'Launching on modern hosting with a fast, production-ready build.',
     icon: 'Rocket'
   },
   {
     id: 'support',
     num: '07',
     title: 'Support',
-    desc: 'Ongoing care, iteration and growth support so your website keeps compounding value long after launch.',
+    desc: 'Ongoing help and iterations to keep your website growing with you.',
     icon: 'LifeBuoy'
   }
 ]

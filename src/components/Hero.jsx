@@ -8,8 +8,8 @@ import { projects } from '../data/projects'
 import { trustBadges } from '../data/trust'
 import { useReducedMotion } from '../hooks/useMotion'
 
-const line1 = 'Premium AI Websites'
-const line2 = 'Designed To Grow'
+const line1 = 'Modern Websites'
+const line2 = 'Built For Growing'
 const line3 = 'Businesses'
 
 function HeroLaptop() {
@@ -189,8 +189,8 @@ export function Hero() {
             transition={{ delay: 1.1, duration: 0.7 }}
             className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-mist-400 md:text-lg lg:mx-0"
           >
-            We create modern, high-converting websites with AI-powered workflows, premium UI/UX and
-            blazing-fast performance.
+            I build modern, responsive and high-performance websites with React, Vite and Tailwind
+            CSS — powered by AI-assisted development workflows and clean, maintainable code.
           </motion.p>
 
           <motion.div
@@ -200,11 +200,11 @@ export function Hero() {
             className="mt-9 flex flex-wrap items-center justify-center gap-4 lg:justify-start"
           >
             <RippleButton size="lg" onClick={() => scrollTo('work')}>
-              View Projects
+              View My Work
               <Icon name="ArrowRight" className="h-4 w-4" />
             </RippleButton>
             <RippleButton size="lg" variant="ghost" onClick={() => scrollTo('contact')}>
-              Book Discovery Call
+              Contact Me
             </RippleButton>
           </motion.div>
 
@@ -283,9 +283,9 @@ export function Hero() {
               </div>
               <div>
                 <p className="font-display text-sm font-semibold text-white">
-                  95<span className="text-cyan-glow">+</span>
+                  Fast <span className="text-cyan-glow">&amp;</span> Responsive
                 </p>
-                <p className="text-xs text-mist-400">Lighthouse</p>
+                <p className="text-xs text-mist-400">Performance</p>
               </div>
             </div>
           </FloatingCard>

@@ -10,29 +10,29 @@ const contactChannels = [
   {
     id: 'whatsapp',
     label: 'WhatsApp',
-    sub: 'Fastest response',
-    href: 'https://wa.me/919876543210',
+    sub: '+91 78618 85995',
+    href: 'https://wa.me/917861885995',
     icon: 'MessageCircle'
   },
   {
     id: 'email',
     label: 'Email',
-    sub: 'hello@novawebai.com',
-    href: 'mailto:hello@novawebai.com',
+    sub: 'savanahir.dev@gmail.com',
+    href: 'mailto:savanahir.dev@gmail.com',
     icon: 'Mail'
   },
   {
     id: 'github',
     label: 'GitHub',
     sub: 'SavanKarangiya',
-    href: 'https://github.com/SavanKarangiya',
+    href: 'https://github.com/savankarangiya',
     icon: 'Github'
   },
   {
     id: 'linkedin',
     label: 'LinkedIn',
     sub: 'Savan Karangiya',
-    href: 'https://www.linkedin.com/in/savan-karangiya',
+    href: 'https://www.linkedin.com/in/savan-karangiya-a55925272/',
     icon: 'Linkedin'
   }
 ]
@@ -60,8 +60,8 @@ export function Contact() {
 
   const handle = (key) => (ev) => setForm({ ...form, [key]: ev.target.value })
 
-  const mailto = `mailto:hello@novawebai.com?subject=${encodeURIComponent(
-    `Project enquiry from ${form.name || 'NOVAWEB visitor'}`
+  const mailto = `mailto:savanahir.dev@gmail.com?subject=${encodeURIComponent(
+    `Project enquiry from ${form.name || 'portfolio visitor'}`
   )}&body=${encodeURIComponent(form.message)}`
 
   return (
@@ -76,7 +76,7 @@ export function Contact() {
               <span className="text-gradient">Unforgettable</span>
             </>
           }
-          subtitle="Tell us about your project and we'll get back to you within 24 hours with a clear plan."
+          subtitle="Tell me about your project and I'll get back to you with a clear plan and honest timeline."
         />
 
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
@@ -162,8 +162,8 @@ export function Contact() {
                     </motion.div>
                     <h3 className="font-display text-2xl font-bold text-white">Message Received</h3>
                     <p className="mt-3 max-w-sm text-sm text-mist-400">
-                      Thanks {form.name.split(' ')[0] || 'for reaching out'}! We'll get back to you
-                      within 24 hours with next steps.
+                      Thanks {form.name.split(' ')[0] || 'for reaching out'}! I'll get back to you
+                      as soon as possible with next steps.
                     </p>
                     <button
                       onClick={() => {

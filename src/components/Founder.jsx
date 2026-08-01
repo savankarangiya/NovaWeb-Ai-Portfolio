@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { SectionHeading } from './ui/SectionHeading'
 import { Reveal } from './ui/Reveal'
 import { Icon } from '../lib/icons'
-import { founderTimeline } from '../data/socials'
+import { founderCapabilities, founderFocus } from '../data/socials'
 
 const roles = ['AI Web Developer', 'React Developer', 'Frontend Engineer']
 
@@ -45,26 +45,20 @@ function PortraitPlaceholder() {
   )
 }
 
-const achievements = [
-  { icon: 'Award', label: 'Premium UI/UX Craft' },
-  { icon: 'Gauge', label: '95+ Lighthouse Performance' },
-  { icon: 'Sparkles', label: 'AI-Powered Workflows' },
-  { icon: 'Rocket', label: 'Fast, Reliable Delivery' }
-]
-
 export function Founder() {
   return (
     <section id="about" className="relative overflow-hidden py-24 md:py-32">
       <div className="aurora-mesh pointer-events-none absolute inset-0 opacity-20" />
       <div className="section-shell">
         <SectionHeading
-          eyebrow="About The Founder"
+          eyebrow="About Me"
           title={
             <>
-              Crafted By Someone Who{' '}
-              <span className="text-gradient">Lives This Craft</span>
+              Hi, I'm{' '}
+              <span className="text-gradient">Savan Karangiya</span>
             </>
           }
+          subtitle="An AI-focused Frontend Developer passionate about modern, responsive and high-performance websites."
         />
 
         <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
@@ -93,19 +87,27 @@ export function Founder() {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <p className="mt-6 text-pretty leading-relaxed text-mist-300">
-                Savan is an AI web developer and frontend engineer on a mission —{' '}
-                <span className="font-semibold text-white">
-                  helping businesses grow with premium digital experiences.
-                </span>{' '}
-                Combining deep design sensibility with an AI-accelerated engineering workflow, he builds
-                websites that don't just look expensive — they perform like it too.
-              </p>
+              <div className="mt-6 space-y-4 text-pretty leading-relaxed text-mist-300">
+                <p>
+                  Hi, I'm Savan Karangiya — an AI-focused Frontend Developer passionate about
+                  creating modern, responsive and high-performance websites.
+                </p>
+                <p>
+                  I specialize in <span className="font-semibold text-white">React</span>,{' '}
+                  <span className="font-semibold text-white">Vite</span>,{' '}
+                  <span className="font-semibold text-white">Tailwind CSS</span> and AI-assisted
+                  development workflows.
+                </p>
+                <p>
+                  I'm currently building premium portfolio projects while helping businesses
+                  establish a strong online presence.
+                </p>
+              </div>
             </Reveal>
 
             <Reveal delay={0.3}>
               <div className="mt-8 grid grid-cols-2 gap-4">
-                {achievements.map((a) => (
+                {founderCapabilities.map((a) => (
                   <motion.div
                     key={a.label}
                     whileHover={{ y: -4 }}
@@ -124,7 +126,7 @@ export function Founder() {
 
             <Reveal delay={0.4}>
               <div className="relative mt-10 border-l border-white/10 pl-6">
-                {founderTimeline.map((t, i) => (
+                {founderFocus.map((t, i) => (
                   <motion.div
                     key={t.title}
                     initial={{ opacity: 0, x: -16 }}
@@ -134,10 +136,7 @@ export function Founder() {
                     className="relative mb-6 last:mb-0"
                   >
                     <span className="absolute -left-[27px] top-1 h-2 w-2 rounded-full bg-cyan-glow shadow-glow-cyan" />
-                    <p className="font-display text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-glow">
-                      {t.year}
-                    </p>
-                    <p className="mt-0.5 font-display text-sm font-semibold text-white">{t.title}</p>
+                    <p className="font-display text-sm font-semibold text-white">{t.title}</p>
                     <p className="mt-0.5 text-sm text-mist-400">{t.desc}</p>
                   </motion.div>
                 ))}

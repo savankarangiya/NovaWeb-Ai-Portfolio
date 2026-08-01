@@ -65,7 +65,7 @@ export function Loader({ onDone }) {
         transition={{ delay: 0.8, duration: 0.6 }}
         className="mt-4 font-display text-[11px] font-medium uppercase tracking-[0.5em] text-mist-400"
       >
-        Premium AI Web Development
+        AI Assisted Web Development
       </motion.p>
 
       <div className="relative mt-10 h-[3px] w-56 overflow-hidden rounded-full bg-white/10">

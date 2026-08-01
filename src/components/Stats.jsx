@@ -3,7 +3,6 @@ import { Reveal } from './ui/Reveal'
 import { Counter } from './ui/Counter'
 import { Icon } from '../lib/icons'
 import { stats } from '../data/stats'
-
 export function Stats() {
   return (
     <section id="stats" className="relative overflow-hidden py-20 md:py-28">
@@ -29,11 +28,23 @@ export function Stats() {
                     <Icon name={stat.icon} className="h-5 w-5" />
                   </motion.div>
                 </div>
-                <Counter
-                  to={stat.value}
-                  suffix={stat.suffix}
-                  className="block font-display text-4xl font-bold tracking-tight text-white md:text-5xl"
-                />
+                {stat.value != null ? (
+                  <Counter
+                    to={stat.value}
+                    suffix={stat.suffix}
+                    className="block font-display text-4xl font-bold tracking-tight text-white md:text-5xl"
+                  />
+                ) : (
+                  <motion.p
+                    initial={{ opacity: 0, y: 12 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="block font-display text-3xl font-bold tracking-tight text-white md:text-4xl"
+                  >
+                    {stat.text}
+                  </motion.p>
+                )}
                 <p className="mt-2 font-display text-xs font-medium uppercase tracking-[0.18em] text-mist-400">
                   {stat.label}
                 </p>

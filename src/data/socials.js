@@ -2,48 +2,55 @@ export const socials = [
   {
     id: 'whatsapp',
     label: 'WhatsApp',
-    href: 'https://wa.me/919876543210',
+    sub: '+91 78618 85995',
+    href: 'https://wa.me/917861885995',
     icon: 'MessageCircle'
   },
   {
     id: 'email',
     label: 'Email',
-    href: 'mailto:hello@novawebai.com',
+    sub: 'savanahir.dev@gmail.com',
+    href: 'mailto:savanahir.dev@gmail.com',
     icon: 'Mail'
   },
   {
     id: 'github',
     label: 'GitHub',
-    href: 'https://github.com/SavanKarangiya',
+    sub: 'SavanKarangiya',
+    href: 'https://github.com/savankarangiya',
     icon: 'Github'
   },
   {
     id: 'linkedin',
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/savan-karangiya',
+    sub: 'Savan Karangiya',
+    href: 'https://www.linkedin.com/in/savan-karangiya-a55925272/',
     icon: 'Linkedin'
   }
 ]
 
-export const founderTimeline = [
+export const founderCapabilities = [
+  { icon: 'Atom', label: 'React Development' },
+  { icon: 'Layers', label: 'Tailwind CSS' },
+  { icon: 'Wand2', label: 'Framer Motion' },
+  { icon: 'Sparkles', label: 'AI Assisted Workflow' }
+]
+
+export const founderFocus = [
   {
-    year: 'Foundation',
-    title: 'The obsession begins',
-    desc: 'Discovered the craft of building interfaces that feel like products.'
+    title: 'Building Portfolio Projects',
+    desc: 'Crafting premium, production-quality demos to showcase my frontend craft.'
   },
   {
-    year: 'Skills',
-    title: 'Mastering the modern stack',
-    desc: 'Deep-dived into React, Tailwind and motion design.'
+    title: 'Helping Businesses Online',
+    desc: 'Supporting businesses in establishing a strong, modern online presence.'
   },
   {
-    year: 'AI Era',
-    title: 'AI-powered workflows',
-    desc: 'Pioneered AI-accelerated pipelines to build faster without losing craft.'
+    title: 'Learning & Improving',
+    desc: 'Continuously refining my skills in React, Vite and AI-assisted workflows.'
   },
   {
-    year: 'Now',
-    title: 'NOVAWEB AI',
-    desc: 'Helping businesses grow with premium digital experiences.'
+    title: 'Writing Clean Code',
+    desc: 'Prioritizing maintainable, semantic and performant frontend code.'
   }
 ]

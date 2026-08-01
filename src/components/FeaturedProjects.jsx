@@ -58,10 +58,18 @@ function ProjectDetails({ project, index }) {
   return (
     <div>
       <Reveal>
-        <span className="eyebrow">
-          <Icon name="Rocket" className="h-3.5 w-3.5" />
-          {project.category}
-        </span>
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="eyebrow">
+            <Icon name="Rocket" className="h-3.5 w-3.5" />
+            {project.category}
+          </span>
+          {project.isPractice && (
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-500/40 bg-violet-500/10 px-3.5 py-1.5 font-display text-[11px] font-semibold uppercase tracking-[0.18em] text-violet-300">
+              <Icon name="Sparkles" className="h-3 w-3" />
+              Practice Project
+            </span>
+          )}
+        </div>
       </Reveal>
 
       <Reveal delay={0.1}>
@@ -70,7 +78,13 @@ function ProjectDetails({ project, index }) {
         </h3>
       </Reveal>
       <Reveal delay={0.15}>
-        <p className="mt-1 font-display text-sm font-medium text-cyan-glow">{project.tagline}</p>
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          <p className="font-display text-sm font-medium text-cyan-glow">{project.tagline}</p>
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 font-display text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-300">
+            <Icon name="Smartphone" className="h-3 w-3" />
+            Responsive
+          </span>
+        </div>
       </Reveal>
 
       <Reveal delay={0.2}>
@@ -95,8 +109,31 @@ function ProjectDetails({ project, index }) {
         ))}
       </div>
 
+      <Reveal delay={0.5}>
+        <div className="mt-6">
+          <p className="mb-2.5 flex items-center gap-2 font-display text-xs font-semibold uppercase tracking-[0.18em] text-mist-400">
+            <Icon name="Layers" className="h-3.5 w-3.5 text-cyan-glow" />
+            Key Features
+          </p>
+          <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+            {project.features.map((f) => (
+              <li
+                key={f}
+                className="flex items-center gap-2 rounded-xl border border-white/[0.06] bg-white/[0.03] px-3 py-2 text-xs font-medium text-mist-200"
+              >
+                <Icon name="Check" className="h-3.5 w-3.5 shrink-0 text-cyan-glow" />
+                {f}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Reveal>
+
       <Reveal delay={0.55}>
-        <div className="mt-7 flex flex-wrap items-center gap-2">
+        <div className="mt-6 flex flex-wrap items-center gap-2">
+          <span className="font-display text-xs font-semibold uppercase tracking-[0.18em] text-mist-400">
+            Tech
+          </span>
           {project.tech.map((t) => (
             <span
               key={t}
@@ -122,7 +159,7 @@ function ProjectDetails({ project, index }) {
             onClick={() => scrollTo('contact')}
             className="group inline-flex items-center gap-1.5 self-center font-display text-sm font-semibold text-mist-300 transition-colors hover:text-white"
           >
-            Start a similar project
+            Want something like this for your business?
             <Icon name="ArrowRight" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </button>
         </div>
@@ -144,7 +181,7 @@ export function FeaturedProjects() {
               <span className="text-gradient">Impossible To Ignore</span>
             </>
           }
-          subtitle="Every project is engineered end-to-end — strategy, premium design, motion and performance — then stress-tested against real business goals."
+          subtitle="Premium portfolio concepts — built with modern design, motion and performance — and ready to be adapted for your business."
         />
 
         <div className="space-y-32 md:space-y-40">

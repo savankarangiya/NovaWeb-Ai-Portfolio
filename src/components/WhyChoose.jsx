@@ -10,14 +10,14 @@ export function WhyChoose() {
       <div className="aurora-mesh pointer-events-none absolute inset-0 opacity-25" />
       <div className="section-shell">
         <SectionHeading
-          eyebrow="Why NOVAWEB AI"
+          eyebrow="Why Work With Me"
           title={
             <>
-              Why Brands Trust Us With{' '}
-              <span className="text-gradient">Their Digital Future</span>
+              A Developer You Can{' '}
+              <span className="text-gradient">Actually Count On</span>
             </>
           }
-          subtitle="Nine uncompromising standards that show up in every single project — no exceptions."
+          subtitle="Six commitments that show up in every project — honest work, clean craft and clear communication."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

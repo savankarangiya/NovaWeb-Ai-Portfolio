@@ -44,9 +44,16 @@ export function Footer() {
               <Logo />
             </motion.button>
             <p className="mt-4 text-sm leading-relaxed text-mist-400">
-              Premium AI web development agency building modern, high-converting websites that grow
-              businesses.
+              Modern, responsive and high-performance websites — built with React, Vite and
+              AI-assisted development workflows.
             </p>
+            <a
+              href="tel:+917861885995"
+              className="mt-4 inline-flex items-center gap-2 font-display text-sm text-mist-300 transition-colors hover:text-cyan-glow"
+            >
+              <Icon name="Phone" className="h-4 w-4" />
+              +91 78618 85995
+            </a>
           </div>
 
           <nav aria-label="Footer">

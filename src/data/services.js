@@ -1,65 +1,44 @@
 export const services = [
   {
     id: 'business',
-    title: 'Premium Business Websites',
-    desc: 'High-converting brand websites engineered to position your business as the obvious choice in your market.',
+    title: 'Business Website',
+    desc: 'Clean, modern business websites that present your brand professionally and give customers a clear path to connect.',
     icon: 'Briefcase',
-    features: ['Custom design', 'Conversion focused', 'CMS ready']
-  },
-  {
-    id: 'gym',
-    title: 'Gym Websites',
-    desc: 'High-energy fitness sites with membership funnels, class schedules and trainer showcases that drive sign-ups.',
-    icon: 'Dumbbell',
-    features: ['Membership funnel', 'Class booking', 'Trainer profiles']
-  },
-  {
-    id: 'dental',
-    title: 'Dental Websites',
-    desc: 'Calm, trust-first websites for clinics that convert browsers into booked appointments and loyal patients.',
-    icon: 'Stethoscope',
-    features: ['Trust building', 'Appointment paths', 'Service pages']
+    features: ['Modern design', 'Clear structure', 'Contact ready']
   },
   {
     id: 'landing',
-    title: 'Landing Pages',
-    desc: 'Surgical, high-velocity landing pages built to capture leads, launch products and scale ad campaigns.',
+    title: 'Landing Page',
+    desc: 'Focused, high-converting landing pages designed to promote a product, service or campaign with one clear message.',
     icon: 'Rocket',
-    features: ['A/B ready', 'Blazing speed', 'Lead capture']
+    features: ['Single goal focus', 'Lead capture', 'Fast loading']
   },
   {
-    id: 'portfolio',
-    title: 'Portfolio Websites',
-    desc: 'Award-quality personal and studio portfolios that make your work impossible to ignore.',
+    id: 'react-dev',
+    title: 'React Frontend Development',
+    desc: 'Component-based frontend development with React, Vite and Tailwind CSS — maintainable, fast and scalable.',
+    icon: 'Code2',
+    features: ['Component architecture', 'Clean code', 'Reusable UI']
+  },
+  {
+    id: 'redesign',
+    title: 'Website Redesign',
+    desc: 'Refreshing outdated websites into modern, responsive experiences without losing your brand identity.',
     icon: 'Palette',
-    features: ['Showcase design', 'Micro interactions', 'Personal brand']
+    features: ['Modern refresh', 'Brand preserved', 'Responsive rebuild']
   },
   {
-    id: 'ai',
-    title: 'AI Integration',
-    desc: 'AI-powered workflows, chatbots and intelligent features woven directly into your product experience.',
-    icon: 'BrainCircuit',
-    features: ['AI chatbots', 'Smart workflows', 'Content automation']
+    id: 'responsive-ui',
+    title: 'Responsive UI Development',
+    desc: 'Pixel-perfect, mobile-first interfaces that feel native and smooth on every screen size.',
+    icon: 'Smartphone',
+    features: ['Mobile first', 'Fluid layouts', 'Touch friendly']
   },
   {
     id: 'performance',
     title: 'Performance Optimization',
-    desc: 'Sub-second loads, buttery interactions and Lighthouse scores that embarrass the competition.',
+    desc: 'Faster load times, smoother interactions and better Lighthouse scores through clean, optimized code.',
     icon: 'Gauge',
     features: ['Core Web Vitals', 'Lazy loading', 'Bundle tuning']
-  },
-  {
-    id: 'seo',
-    title: 'SEO Optimization',
-    desc: 'Technical SEO, semantic markup and structured data so search engines love your site as much as visitors do.',
-    icon: 'Search',
-    features: ['Semantic HTML', 'Schema markup', 'Meta strategy']
-  },
-  {
-    id: 'responsive',
-    title: 'Responsive Development',
-    desc: 'Pixel-perfect across every screen — from 4K monitors to the smallest phones, everything feels native.',
-    icon: 'Smartphone',
-    features: ['Mobile first', 'Fluid layouts', 'Touch friendly']
   }
 ]

@@ -71,7 +71,7 @@ export function Navbar() {
 
           <div className="hidden lg:block">
             <RippleButton size="sm" onClick={() => scrollTo('contact')}>
-              Book Discovery Call
+              Contact Me
             </RippleButton>
           </div>
 
@@ -121,7 +121,7 @@ export function Navbar() {
               transition={{ delay: 0.4 }}
               className="relative z-10 mt-6"
             >
-              <RippleButton onClick={() => scrollTo('contact')}>Book Discovery Call</RippleButton>
+              <RippleButton onClick={() => scrollTo('contact')}>Contact Me</RippleButton>
             </motion.div>
           </motion.div>
         )}

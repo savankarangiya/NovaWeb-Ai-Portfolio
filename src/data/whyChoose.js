@@ -1,56 +1,38 @@
 export const whyChoose = [
   {
-    id: 'premium-design',
+    id: 'modern-design',
     icon: 'Gem',
-    title: 'Premium Design',
-    desc: 'Every screen is designed like a product — spacing, hierarchy and motion tuned until it feels expensive.'
+    title: 'Modern Design',
+    desc: 'Clean, current interfaces with premium spacing, hierarchy and attention to detail.'
   },
   {
-    id: 'modern-animations',
-    icon: 'Wand2',
-    title: 'Modern Animations',
-    desc: 'Purposeful motion that guides attention and makes interfaces feel alive, never gimmicky.'
+    id: 'clean-code',
+    icon: 'Braces',
+    title: 'Clean Code',
+    desc: 'Semantic, maintainable, well-structured code that is easy to read and extend.'
+  },
+  {
+    id: 'responsive-dev',
+    icon: 'Smartphone',
+    title: 'Responsive Development',
+    desc: 'Mobile-first builds that look and feel native on every screen size.'
   },
   {
     id: 'fast-delivery',
     icon: 'Zap',
     title: 'Fast Delivery',
-    desc: 'AI-accelerated workflows shrink timelines without ever compromising on craft or quality.'
-  },
-  {
-    id: 'modern-ui',
-    icon: 'Layout',
-    title: 'Modern UI',
-    desc: 'Current design language your customers instantly recognize as cutting-edge and trustworthy.'
-  },
-  {
-    id: 'responsive',
-    icon: 'Smartphone',
-    title: 'Responsive',
-    desc: 'Flawless experiences across every device, built mobile-first and refined for widescreen.'
-  },
-  {
-    id: 'seo',
-    icon: 'Search',
-    title: 'SEO',
-    desc: 'Semantic, structured and fast — the foundations that get you found and keep you ranked.'
-  },
-  {
-    id: 'performance',
-    icon: 'Gauge',
-    title: 'Performance',
-    desc: 'Obsessive optimization for Core Web Vitals and Lighthouse scores that hit 95+.'
-  },
-  {
-    id: 'accessibility',
-    icon: 'Accessibility',
-    title: 'Accessibility',
-    desc: 'Keyboard-friendly, contrast-safe and screen-reader ready. Great design includes everyone.'
+    desc: 'Efficient workflows that move quickly without cutting corners on quality.'
   },
   {
     id: 'ai-workflow',
     icon: 'BrainCircuit',
     title: 'AI Powered Workflow',
-    desc: 'From copy to code, AI accelerates every stage — faster iterations, smarter decisions, better results.'
+    desc: 'AI-assisted development that speeds up iteration and sharpens the final result.'
+  },
+  {
+    id: 'transparent',
+    icon: 'MessageCircle',
+    title: 'Transparent Communication',
+    desc: 'Clear updates and honest timelines at every stage of the project.'
   }
 ]

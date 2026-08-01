@@ -1,34 +1,30 @@
 export const faqs = [
   {
-    q: 'What makes NOVAWEB AI different from a typical web developer?',
-    a: 'We operate like a product studio. Every build blends premium UI/UX craft with AI-accelerated workflows, so you get the polish of a large agency with the speed, attention and personal touch of a dedicated expert.'
+    q: 'What can you actually help me with?',
+    a: 'I build modern business websites, landing pages and React frontends — and I redesign outdated sites into responsive, performant experiences. Everything is built from clean, maintainable code with an AI-assisted workflow.'
   },
   {
-    q: 'How long does it take to build a website?',
-    a: 'Most premium business and landing page projects ship in 1–3 weeks depending on scope. We move fast because AI handles the heavy lifting while a human eye owns every pixel of the design.'
+    q: 'How long does a typical project take?',
+    a: 'Most business and landing page projects are delivered in about 1–3 weeks depending on scope. I work in clear stages — discovery, planning, design, development, testing and deployment — so you always know where things stand.'
   },
   {
-    q: 'Do you work with businesses outside your existing portfolio?',
-    a: 'Absolutely. Our live projects show dental and fitness brands, but the same design system and engineering discipline applies to any industry — from SaaS to restaurants to professional services.'
-  },
-  {
-    q: 'What does "AI-powered" actually mean for my project?',
-    a: 'AI accelerates our workflow — content drafting, code generation, design iteration and QA. The result is faster delivery, more iterations and a more polished final product, not a template stamped out by a machine.'
+    q: 'What does "AI-assisted" actually mean?',
+    a: 'I use AI tools throughout the workflow — for research, content drafting, design iteration and speeding up repetitive code — while a human eye owns every pixel of the design. It means faster delivery and more iterations, not lower quality.'
   },
   {
     q: 'Will my website be fast and show up on Google?',
-    a: 'Yes. We obsess over Core Web Vitals (targeting 95+ Lighthouse), ship semantic HTML and structured data, and bake in technical SEO from the first commit — so performance and search visibility are built-in, not bolted on.'
+    a: 'I focus on performance and clean, semantic HTML from the start — which are the foundations search engines look for. I don\'t promise rankings, but the sites I build are structured and optimized to give you the best possible chance.'
   },
   {
     q: 'Do you provide support after launch?',
-    a: 'Every launch includes a support window, and we offer ongoing care plans for updates, iterations and growth. Your website is a product, and we treat it like one.'
+    a: 'Yes. Every launch includes a support window for fixes and small changes, and I offer ongoing care if you want to keep improving the site over time.'
   },
   {
-    q: 'Can I see my website live while it is being built?',
-    a: 'Yes. You get a live preview link early in development so you can watch the site come to life and give feedback on a real, working product — not static mockups.'
+    q: 'Can I see my website while it is being built?',
+    a: 'Yes — I share a live preview link early in development so you can watch the site come together and give feedback on a real, working product.'
   },
   {
     q: 'How do we get started?',
-    a: 'Book a free discovery call. We talk about your goals, walk you through the process and give you a clear plan and timeline — no pressure, no jargon.'
+    a: 'Message me through the contact form, WhatsApp or email. We talk about your goals, and I give you a clear plan and timeline — no pressure, no jargon.'
   }
 ]

@@ -2,11 +2,12 @@ export const projects = [
   {
     id: 'smile-dental',
     name: 'Smile Dental Care',
-    tagline: 'Premium Dental Clinic Website Concept',
+    tagline: 'Premium Dental Clinic Website',
     category: 'Healthcare',
     isPractice: true,
-    liveUrl: 'https://smile-dental-care-git-main-savankarangiyas-projects.vercel.app/',
+    liveUrl: 'https://smile-dental-care-gamma.vercel.app/',
     githubUrl: 'https://github.com/SavanKarangiya/smile-dental-care',
+    siteTitle: 'Smile Dental Care',
     overview:
       'A premium dental clinic website concept demonstrating appointment booking, responsive layouts, clean UI and SEO-ready frontend architecture.',
     problem:
@@ -15,20 +16,21 @@ export const projects = [
       'Designed a calm, clinical-but-warm interface with prominent booking calls-to-action, a clear service structure and a fully responsive, accessible layout.',
     result:
       'A polished, SEO-ready frontend concept that feels trustworthy and gently guides visitors from browsing to booking.',
-    features: ['Appointment booking UI', 'Fully responsive', 'Clean, semantic markup', 'SEO-ready architecture'],
+    features: ['Appointment booking UI', 'Fully responsive', 'Clean semantic markup', 'SEO-ready architecture'],
     tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
     accent: 'from-cyan-400 via-sky-400 to-blue-500',
-    previewImage:
-      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1600&auto=format&fit=crop'
+    previewImage: '/screenshots/smile-dental-desktop.jpg',
+    previewMobile: '/screenshots/smile-dental-mobile.jpg'
   },
   {
     id: 'ironcore-fitness',
     name: 'IronCore Elite Fitness',
-    tagline: 'Modern Fitness Website Concept',
+    tagline: 'Modern Fitness Website',
     category: 'Fitness',
     isPractice: true,
-    liveUrl: 'https://fite-with-savan-git-main-savankarangiyas-projects.vercel.app/',
-    githubUrl: 'https://github.com/SavanKarangiya/fite-with-savan',
+    liveUrl: 'https://fite-with-savan.vercel.app/',
+    githubUrl: 'https://github.com/SavanKarangiya/IronCore-Elite-Fitness-Website',
+    siteTitle: 'IronCore Elite Fitness',
     overview:
       'A modern fitness website concept built to showcase premium UI, smooth animations, mobile responsiveness and conversion-focused landing pages.',
     problem:
@@ -40,7 +42,7 @@ export const projects = [
     features: ['Smooth animations', 'Conversion-focused landing', 'Mobile responsive', 'Premium UI'],
     tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
     accent: 'from-orange-400 via-red-500 to-rose-500',
-    previewImage:
-      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1600&auto=format&fit=crop'
+    previewImage: '/screenshots/ironcore-desktop.jpg',
+    previewMobile: '/screenshots/ironcore-mobile.jpg'
   }
 ]

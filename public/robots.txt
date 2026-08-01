@@ -13,4 +13,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://nova-web-portfolio.vercel.app/sitemap.xml
+Sitemap: https://novawebportfolio-nine.vercel.app/sitemap.xml

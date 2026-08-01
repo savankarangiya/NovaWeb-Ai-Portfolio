@@ -21,8 +21,8 @@ function ProjectVisual({ project, index }) {
               <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
               <span className="h-2.5 w-2.5 rounded-full bg-green-400/80" />
             </div>
-            <span className="rounded-md bg-white/5 px-2 py-0.5 font-mono text-[10px] text-mist-400">
-              {project.id.split('-')[0]}.vercel.app
+            <span className="rounded-md bg-white/5 px-2.5 py-0.5 font-mono text-[10px] text-mist-400">
+              {project.siteTitle}
             </span>
           </div>
           <LaptopFrame site={project} />
@@ -66,7 +66,7 @@ function ProjectDetails({ project, index }) {
           {project.isPractice && (
             <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-500/40 bg-violet-500/10 px-3.5 py-1.5 font-display text-[11px] font-semibold uppercase tracking-[0.18em] text-violet-300">
               <Icon name="Sparkles" className="h-3 w-3" />
-              Practice Project
+              Portfolio Project
             </span>
           )}
         </div>

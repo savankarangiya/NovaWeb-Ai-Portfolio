@@ -45,6 +45,16 @@
     color: #ffffff;
   }
 
+  :where(a, button, input, textarea, select):focus-visible {
+    outline: 2px solid rgba(var(--cyan-glow), 0.85);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  :where(a, button, input, textarea, select):focus:not(:focus-visible) {
+    outline: none;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
   }

@@ -17,7 +17,7 @@ export function Services() {
               <span className="text-gradient">Win Online</span>
             </>
           }
-          subtitle="From landing pages to full AI-integrated platforms — each service is delivered with the same obsessive standard of craft."
+          subtitle="From business websites to landing pages and React frontends — every service is delivered with the same obsessive standard of craft."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

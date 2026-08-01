@@ -42,18 +42,23 @@ src/
   lib/                 Icon maps & brand SVGs
   App.jsx              Composes the full experience
   index.css            Global design system
+public/
+  screenshots/         Real screenshots of the featured projects
+  resume.pdf           Savan Karangiya — resume
+  og-image.png         Social sharing card (1200x630)
+  apple-touch-icon.png iOS home-screen icon
 ```
 
-## Live Demo Embed
+## Project Screenshots
 
-The Hero and Featured Work sections embed the two real, deployed projects in live device
-mockups (Smile Dental Care, IronCore Elite Fitness). If an embed is blocked by the target
-site, a styled preview fallback image is shown automatically.
+The Hero and Featured Work sections display real screenshots of the two featured projects
+(Smile Dental Care, IronCore Elite Fitness) in premium device mockups, captured from the
+actual built sites. Each card links through to the live demo and GitHub repository.
 
 ## Content Notes
 
 - Testimonials intentionally contain **no fake quotes** — the section is framed as an
   invitation for the next real success story.
-- Contact form is front-end validated with an animated success state; wire the `mailto`
-  link or an endpoint of your choice for delivery.
-- `public/resume.pdf` is a placeholder — replace it with the real resume.
+- Contact form is front-end validated; submitting opens a pre-filled email to
+  savanahir.dev@gmail.com with an animated success state.
+- Stats, claims and badges are strictly truthful — no invented clients, revenue or reviews.

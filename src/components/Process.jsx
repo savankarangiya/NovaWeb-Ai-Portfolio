@@ -27,7 +27,7 @@ export function Process() {
               <span className="text-gradient">Flawlessly Executed</span>
             </>
           }
-          subtitle="A proven seven-stage pipeline that removes guesswork and guarantees a premium result, every single time."
+          subtitle="A clear seven-stage pipeline that removes guesswork and keeps you informed from first call to launch."
         />
 
         <div ref={ref} className="relative mx-auto max-w-4xl">

@@ -1,8 +1,9 @@
-import { useRef, useState, useEffect, useCallback } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { motion, AnimatePresence, useMotionValue, useSpring } from 'framer-motion'
 import { Aurora } from './ui/Aurora'
 import { RippleButton } from './ui/RippleButton'
 import { Tilt } from './ui/Tilt'
+import { LaptopFrame } from './ui/DeviceMockup'
 import { Icon } from '../lib/icons'
 import { projects } from '../data/projects'
 import { trustBadges } from '../data/trust'
@@ -14,14 +15,10 @@ const line3 = 'Businesses'
 
 function HeroLaptop() {
   const [index, setIndex] = useState(0)
-  const [loaded, setLoaded] = useState(false)
   const site = projects[index]
 
   useEffect(() => {
-    const t = setInterval(() => {
-      setLoaded(false)
-      setIndex((i) => (i + 1) % projects.length)
-    }, 6000)
+    const t = setInterval(() => setIndex((i) => (i + 1) % projects.length), 6000)
     return () => clearInterval(t)
   }, [])
 
@@ -30,31 +27,13 @@ function HeroLaptop() {
       <AnimatePresence mode="wait">
         <motion.div
           key={site.id}
-          initial={{ opacity: 0, x: 24 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -24 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ opacity: 0, scale: 0.985 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 1.015 }}
+          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
           className="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-navy-900"
         >
-          <img src={site.previewImage} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-navy-900/70">
-            <p className="font-display text-base font-semibold text-white md:text-lg">{site.name}</p>
-            <p className="text-xs text-mist-300 md:text-sm">{site.tagline}</p>
-          </div>
-          {!loaded && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="h-9 w-9 animate-spin rounded-full border-2 border-white/10 border-t-cyan-glow" />
-            </div>
-          )}
-          <iframe
-            src={site.liveUrl}
-            title={`${site.name} live demo`}
-            className={`absolute inset-0 h-full w-full border-0 transition-opacity duration-700 ${loaded ? 'opacity-100' : 'opacity-0'}`}
-            onLoad={() => setLoaded(true)}
-            loading="lazy"
-            referrerPolicy="no-referrer"
-            sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
-          />
+          <LaptopFrame site={site} className="absolute inset-0" priority />
         </motion.div>
       </AnimatePresence>
 
@@ -63,10 +42,7 @@ function HeroLaptop() {
         {projects.map((p, i) => (
           <button
             key={p.id}
-            onClick={() => {
-              setLoaded(false)
-              setIndex(i)
-            }}
+            onClick={() => setIndex(i)}
             className={`h-1.5 rounded-full transition-all duration-500 ${
               i === index ? 'w-6 bg-cyan-glow' : 'w-1.5 bg-white/25 hover:bg-white/50'
             }`}
@@ -74,7 +50,7 @@ function HeroLaptop() {
           />
         ))}
         <span className="pl-1 font-display text-[10px] font-medium uppercase tracking-widest text-mist-300">
-          Live
+          {site.name}
         </span>
       </div>
     </div>
@@ -189,8 +165,9 @@ export function Hero() {
             transition={{ delay: 1.1, duration: 0.7 }}
             className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-mist-400 md:text-lg lg:mx-0"
           >
-            I build modern, responsive and high-performance websites with React, Vite and Tailwind
-            CSS — powered by AI-assisted development workflows and clean, maintainable code.
+            Hi, I'm Savan Karangiya — I build modern, responsive and high-performance websites
+            with React, Vite and Tailwind CSS, powered by AI-assisted development workflows and
+            clean, maintainable code.
           </motion.p>
 
           <motion.div
@@ -297,7 +274,7 @@ export function Hero() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-green-400" />
               </span>
               <p className="font-display text-xs font-medium text-white">
-                Now building: <span className="text-cyan-glow">{projects[0].name}</span>
+                Latest project: <span className="text-cyan-glow">{projects[0].name}</span>
               </p>
             </div>
           </FloatingCard>

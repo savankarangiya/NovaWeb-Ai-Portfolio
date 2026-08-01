@@ -55,7 +55,8 @@ export function Contact() {
     ev.preventDefault()
     if (!validate()) return
     setStatus('sending')
-    setTimeout(() => setStatus('sent'), 1400)
+    window.location.href = mailto
+    setTimeout(() => setStatus('sent'), 1600)
   }
 
   const handle = (key) => (ev) => setForm({ ...form, [key]: ev.target.value })
@@ -89,7 +90,7 @@ export function Contact() {
                     href={c.href}
                     target={c.href.startsWith('http') ? '_blank' : undefined}
                     rel="noreferrer noopener"
-                    className="glass glass-card-hover flex items-center gap-4 rounded-2xl p-5"
+                    className="group glass glass-card-hover flex items-center gap-4 rounded-2xl p-5"
                   >
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-electric-500 to-cyan-glow text-white shadow-glow-blue">
                       <Icon name={c.icon} className="h-5 w-5" />

@@ -17,7 +17,7 @@ export function Stats() {
             transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
           />
 
-          <div className="relative grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-5">
+          <div className="relative grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
             {stats.map((stat, i) => (
               <Reveal key={stat.id} delay={i * 0.08} className="text-center">
                 <div className="mb-4 inline-flex">

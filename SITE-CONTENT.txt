@@ -1,6 +1,6 @@
 NOVAWEB AI — Modern Websites Built For Growing Businesses
 ==========================================================
-URL: https://nova-web-portfolio.vercel.app/
+URL: https://novawebportfolio-nine.vercel.app/
 Developer: Savan Karangiya (AI-focused Frontend Developer)
 
 Hero
@@ -18,7 +18,7 @@ Portfolio Projects (practice demonstrations, not client work)
    layouts, clean UI and SEO-ready frontend architecture.
    Features: Appointment booking UI, Fully responsive, Clean semantic markup, SEO-ready architecture
    Tech: React, Tailwind CSS, Framer Motion, Vite
-   Live: https://smile-dental-care-git-main-savankarangiyas-projects.vercel.app/
+   Live: https://smile-dental-care-gamma.vercel.app/
    GitHub: https://github.com/SavanKarangiya/smile-dental-care
 
 2. IronCore Elite Fitness — Practice Project (Fitness)
@@ -26,8 +26,8 @@ Portfolio Projects (practice demonstrations, not client work)
    responsiveness and conversion-focused landing pages.
    Features: Smooth animations, Conversion-focused landing, Mobile responsive, Premium UI
    Tech: React, Tailwind CSS, Framer Motion, Vite
-   Live: https://fite-with-savan-git-main-savankarangiyas-projects.vercel.app/
-   GitHub: https://github.com/SavanKarangiya/fite-with-savan
+   Live: https://fite-with-savan.vercel.app/
+   GitHub: https://github.com/SavanKarangiya/IronCore-Elite-Fitness-Website
 
 Services (what I can actually deliver)
 --------------------------------------

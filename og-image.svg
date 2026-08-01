@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="90%">
+      <stop offset="0%" stop-color="#0a1230"/>
+      <stop offset="55%" stop-color="#060b1f"/>
+      <stop offset="100%" stop-color="#030614"/>
+    </radialGradient>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4f7cff" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c2cee8"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="120"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="250" cy="180" r="260" fill="url(#aurora)" filter="url(#blur)"/>
+  <circle cx="1000" cy="450" r="300" fill="#22d3ee" opacity="0.25" filter="url(#blur)"/>
+  <circle cx="600" cy="300" r="180" fill="#4f7cff" opacity="0.3" filter="url(#blur)"/>
+  <rect x="70" y="70" width="1060" height="490" rx="36" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M70 190h1060M70 300h1060" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2"/>
+  <text x="110" y="170" font-family="monospace" font-size="30" fill="#22d3ee" letter-spacing="6">NOVAWEB AI</text>
+  <text x="110" y="330" font-family="Arial, sans-serif" font-weight="700" font-size="84" fill="url(#text)">Premium AI Websites</text>
+  <text x="110" y="400" font-family="Arial, sans-serif" font-weight="700" font-size="84" fill="url(#text)">Designed To Grow Businesses</text>
+  <rect x="110" y="450" width="360" height="62" rx="31" fill="#4f7cff"/>
+  <text x="290" y="491" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle">Hire NOVAWEB AI</text>
+</svg>

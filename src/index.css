@@ -1,0 +1,300 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   NOVAWEB AI — Design System
+   ============================================================ */
+
+@layer base {
+  :root {
+    --bg: 3, 6, 20;
+    --bg-soft: 6, 11, 31;
+    --bg-card: 10, 18, 48;
+    --electric: 79, 124, 255;
+    --cyan-glow: 34, 211, 238;
+    --violet-glow: 124, 58, 237;
+    --text: 226, 232, 240;
+    --text-muted: 141, 156, 196;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html.light {
+    --bg: 246, 249, 255;
+    --bg-soft: 255, 255, 255;
+    --bg-card: 255, 255, 255;
+    --text: 10, 15, 34;
+    --text-muted: 90, 105, 140;
+  }
+
+  body {
+    @apply bg-navy-950 font-body text-mist-200 overflow-x-hidden;
+    background-color: rgb(var(--bg));
+    color: rgb(var(--text));
+  }
+
+  ::selection {
+    background: rgba(var(--electric), 0.35);
+    color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--bg));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(var(--electric), 0.7), rgba(var(--cyan-glow), 0.5));
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(var(--electric), 1), rgba(var(--cyan-glow), 0.8));
+  }
+}
+
+@layer components {
+  /* ---------- Glass surfaces ---------- */
+  .glass {
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.02)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 20px 50px -20px rgba(2, 6, 23, 0.8);
+  }
+
+  .glass-strong {
+    background: linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.03)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 30px 70px -30px rgba(2, 6, 23, 0.9);
+  }
+
+  .glass-card-hover {
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s, border-color 0.5s, background 0.5s;
+  }
+  .glass-card-hover:hover {
+    transform: translateY(-8px);
+    border-color: rgba(var(--electric), 0.45);
+    box-shadow: 0 30px 80px -20px rgba(2, 6, 23, 0.9), 0 0 60px -20px rgba(var(--electric), 0.5);
+  }
+
+  /* ---------- Gradient text ---------- */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(110deg, #ffffff 10%, rgba(var(--electric), 1) 45%, rgba(var(--cyan-glow), 1) 80%);
+  }
+
+  .text-gradient-animated {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(110deg, #ffffff, rgba(var(--electric), 1), rgba(var(--cyan-glow), 1), #ffffff);
+    background-size: 200% auto;
+    animation: gradientX 8s ease infinite;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full font-display font-semibold text-white;
+    background: linear-gradient(120deg, rgba(var(--electric), 1), rgba(var(--cyan-glow), 0.85));
+    box-shadow: 0 12px 40px -10px rgba(var(--electric), 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    transition: box-shadow 0.4s, transform 0.4s;
+  }
+  .btn-primary:hover {
+    box-shadow: 0 18px 55px -10px rgba(var(--electric), 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  }
+
+  .btn-ghost {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full font-display font-semibold text-mist-100;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    transition: border-color 0.4s, background 0.4s, box-shadow 0.4s, transform 0.4s;
+  }
+  .btn-ghost:hover {
+    border-color: rgba(var(--electric), 0.6);
+    background: rgba(var(--electric), 0.1);
+    box-shadow: 0 0 40px -12px rgba(var(--electric), 0.6);
+  }
+
+  /* ---------- Aurora ---------- */
+  .aurora-orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(90px);
+    opacity: 0.55;
+    will-change: transform;
+    pointer-events: none;
+  }
+
+  .aurora-mesh {
+    background:
+      radial-gradient(at 20% 20%, rgba(var(--electric), 0.35) 0px, transparent 50%),
+      radial-gradient(at 80% 10%, rgba(var(--cyan-glow), 0.22) 0px, transparent 50%),
+      radial-gradient(at 60% 80%, rgba(var(--violet-glow), 0.24) 0px, transparent 55%),
+      radial-gradient(at 10% 70%, rgba(var(--cyan-glow), 0.14) 0px, transparent 45%);
+  }
+
+  /* ---------- Grid backdrop ---------- */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 75%);
+  }
+
+  /* ---------- Noise overlay ---------- */
+  .noise::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    z-index: 60;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- Shine sweep ---------- */
+  .shine {
+    position: relative;
+    overflow: hidden;
+  }
+  .shine::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.14) 50%, transparent 60%);
+    background-size: 200% 100%;
+    animation: shimmer 4s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  /* ---------- Section shell ---------- */
+  .section-shell {
+    @apply relative mx-auto w-full max-w-7xl px-6 md:px-10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-1.5 font-display text-xs font-semibold uppercase tracking-[0.22em] text-cyan-soft;
+    border: 1px solid rgba(var(--cyan-glow), 0.25);
+    background: rgba(var(--cyan-glow), 0.06);
+  }
+
+  .glow-ring {
+    position: relative;
+  }
+  .glow-ring::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(var(--electric), 0.8), rgba(var(--cyan-glow), 0.5), transparent 60%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .perspective-1200 {
+    perspective: 1200px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* ---------- Cursor ---------- */
+@media (pointer: fine) {
+  body.has-cursor,
+  body.has-cursor * {
+    cursor: none !important;
+  }
+}
+
+/* ---------- Button ripple ---------- */
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* ---------- Marquee ---------- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Hide scrollbar for horizontal rails ---------- */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ---------- Form fields ---------- */
+.field {
+  @apply w-full rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 font-body text-sm text-mist-100 outline-none backdrop-blur-sm;
+  transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
+}
+.field::placeholder {
+  color: rgba(var(--text-muted), 0.6);
+}
+.field:focus {
+  border-color: rgba(var(--electric), 0.6);
+  background: rgba(var(--electric), 0.06);
+  box-shadow: 0 0 0 4px rgba(var(--electric), 0.12);
+}
